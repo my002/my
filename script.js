@@ -227,6 +227,7 @@ async function writeDataSequentially(data) {
         // Jika semua data berhasil ditulis
         console.log('Seluruh data telah berhasil ditulis.');
         showAlert(success, `GIF sudah update !!\nData Terkirim ${convertFileSize(data.length)} \nMemulai Ulang Perangkat....`);
+        location.reload();
 
     }
 }
