@@ -360,7 +360,7 @@ function showSwiper() {
 
     generateSwiperSlides(totalGIF[selected_tab - 1]);
     var swiper = new Swiper(".mySwiper", {
-        effect: 'cards',
+        effect: ' ',
         cardsEffect: {
             slideShadows: true,
             perSlideRotate: 3
