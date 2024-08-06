@@ -9,25 +9,25 @@ let failed = "#F8D7DA";
 let uuidService = "dee13011-14d8-4e12-94af-a6edfeaa1af9";
 let uuidChar = "dee13012-14d8-4e12-94af-a6edfeaa1af9";
 
-document.onkeydown = function(e) {//KOde untuk mencegah klik kanan mouse
-    if(event.keyCode == 123) {
-       return false;
+document.onkeydown = function (e) {//KOde untuk mencegah klik kanan mouse
+    if (event.keyCode == 123) {
+        return false;
     }
-    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-       return false;
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        return false;
     }
-    if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-       return false;
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+        return false;
     }
-    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-       return false;
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+        return false;
     }
-    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-       return false;
+    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        return false;
     }
-  }
+}
 
-  
+
 function addLog(message) {
     var logDiv = document.getElementById("log");
     logDiv.innerHTML += message + "<br>";
@@ -227,7 +227,8 @@ async function writeDataSequentially(data) {
         // Jika semua data berhasil ditulis
         console.log('Seluruh data telah berhasil ditulis.');
         showAlert(success, `GIF sudah update !!\nData Terkirim ${convertFileSize(data.length)} \nMemulai Ulang Perangkat....`);
-        location.reload();
+
+        // history.go(0);
 
     }
 }

@@ -19,7 +19,7 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* Styling untuk elemen .logo */
@@ -98,7 +98,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* Styling untuk elemen .arrow */
@@ -120,7 +120,7 @@ body {
 .radio-container {
   display: flex;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .radio-container input[type="radio"] {
@@ -235,7 +235,7 @@ body {
   background-color: #ddd;
   height: 20px;
   border-radius: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-right: 10px;
 }
 
